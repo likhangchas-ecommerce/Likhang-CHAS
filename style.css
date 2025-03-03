@@ -283,7 +283,7 @@ body {
 }
 
 nav ul li a:hover {
-    color: #ff523b;
+    color: #289c2e;
     transition: 0.3s;
 }
 
@@ -293,7 +293,7 @@ nav ul li a:hover {
 }
 
 .page-btn span:hover {
-    background: #ff523b;
+    background: #289c2e;
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
