@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Likhang CHAS</title>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to top right, #7ccc87, #df80af);
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+        .slider {
+            width: 100%;
+            max-width: 900px;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        .slides {
+            display: flex;
+            width: 300%;
+            animation: slide 10s infinite;
+        }
+        .slides img {
+            width: 100%;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0%); }
+            33% { transform: translateX(-100%); }
+            66% { transform: translateX(-200%); }
+            100% { transform: translateX(0%); }
+        }
+        .container1 {
+            width: 80%;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: rgb(255, 255, 255);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease-out forwards;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        
+        .section1 {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-out forwards;
+            animation-delay: 0.5s;
+        }
+        .section:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+        .section1 img {
+            width: 40%;
+            border-radius: 8px;
+            margin-right: 20px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .section1 img:hover {
+            transform: scale(1.05);
+        }
+        .text {
+            width: 60%;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .slider-container {
+            position: relative;
+            max-width: 100%;
+            text-align: center;
+        }
+        .slider-container img {
+            width: 100%;
+            max-width: 500px;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .slider-btn.left {
+            left: 10px;
+        }
+        .slider-btn.right {
+            right: 10px;
+        }
+    
+        .footer {
+    background-color: #31772a; /* Adjust color if needed */
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+} 
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" width="150px" onclick="location.href='home.html'" style="cursor: pointer;">
+                </div>
+                
+           
+     <!-- Slider Section -->
+    <div class="slider">
+        <div class="slides">
+            <img src="images/family1.jpg" alt="Likhang CHAS Family 1">
+            <img src="images/family2.jpg" alt="Likhang CHAS Family 2">
+            <img src="images/family3.jpg" alt="Likhang CHAS Family 3">
+        </div>
+    </div>
+
+    
+   <!-- About Content -->
+   <div class="container1">
+    <h1>About Likhang CHAS</h1>
+    
+    <div class="section1">
+        <img src="images/mission.jpg" alt="Mission Image">
+        <div class="text">
+            <h2>Our Mission</h2>
+            <p>Empower student nurses by offering products that celebrate their passion and profession. Build a supportive community where creativity meets purpose and ensure quality and sustainability in every product we offer.</p>
+        </div>
+    </div>
+
+    <div class="section1">
+        <div class="text">
+            <h2>Our Vision</h2>
+            <p>We envision a future where student nurses not only excel in their studies but also embrace entrepreneurship as a means of growth and self-expression. Through Likhang CHAS, we hope to inspire others to pursue their creative aspirations while staying true to their calling.</p>
+        </div>
+        <img src="images/vision.jpg" alt="Vision Image">
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+        <p>Our Purpose Is To Creatively Craft and Deliver Exclusive CHAS Merchandise That Embodies Pride, Quality, and Tradition.</p>
+   
+</div>
+</body>
+</html>
+
